@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Mobile Readability</title>
+<meta name="Description" content="Mobile version of Reaabilty">
+<meta name="viewport" content="user-scalable=no, width=device-width" />
+
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?3.1.1/build/cssreset/reset-min.css&3.1.1/build/cssfonts/fonts-min.css">
+<link rel="stylesheet" href="css/style.min.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript"> 
+	google.load("jquery", "1.4.2");
+</script>
+<script type="text/javascript" src="js/jquery.querystring.min.js" ></script>
+<script type="text/javascript" src="js/mreadability.min.js" ></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-499993-11']);
+  _gaq.push(['_setDomainName', '.s3.amazonaws.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+    <div id="home" class="current">
+        <!--<div class="toolbar">
+        <img id="logo" src="images/y18.png" />
+            <h1>Hacker News</h1>
+        </div>-->
+        <div id="content">
+        </div>
+    </div>
+    <div id="progress">Loading Readability...<br/><br/><a href="javascript:window.location = link">Skip<br/>and go to original link.</a></div>
+</body>
+
+</html>
